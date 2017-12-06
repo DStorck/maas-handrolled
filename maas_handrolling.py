@@ -105,7 +105,7 @@ MASTER_IP = MASTER_DEPLOY['interface_set'][0]['links'][0]['ip_address']
 #  munge and deploy worker nodes
 WORKER_CLOUD_CONFIG = HOME + "/.kraken/maas/cloud-config/worker.cloud-config.yaml"
 cloudconfigcleanup.clean_worker(WORKER_CLOUD_CONFIG, MASTER_IP)
-for i in range(0, 5):
+for i in range(0, 3):
     WORKER_ALLOCATE = allocate_node("worker")
     WORKER_DEPLOY = deploy_node(WORKER_ALLOCATE["system_id"], WORKER_CLOUD_CONFIG)
 
