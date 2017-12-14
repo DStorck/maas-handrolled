@@ -13,7 +13,7 @@ a set of scripts, configs and a README to deploy a kraken configured kubernetes 
 1. Log into your MAAS GUI
 1. Select 5 nodes for kubernetes.  All nodes should have at least 2 cores and 4GB of
   memory, more of either resource is fine.
-1. Tag the five nodes.  Either select node -> tags -> edit , or node -> configuration -> machine configuration -> edit . Tag them as:
+1. Tag the five nodes.  Either select node -> tags -> edit , or node -> configuration -> machine configuration -> edit. Tag them as:
     - etcd (x1)
     - master (x1)
     - worker (x3)  
