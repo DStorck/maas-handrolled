@@ -23,7 +23,7 @@ a set of scripts, configs and a README to deploy a kraken configured kubernetes 
 ##  Python script
 1. export two variables to the shell environment you will be running `mass_handrolling.py` from:
     - `MAAS_API_URL` this is the API endpoint for your MAAS install.  This should be of the form `http<s>://DNS/MAAS/api/2.0`, the IP instead of a DNS entry is fine
-    - `TOKEN` the MAAS key from the previous section
+    - `MAAS_API_KEY` the MAAS key from the previous section
 1. Install required python libraries
     - `pip install -r requirements.txt`
 1. Execute the script `maas_handrolling.py` located in this directory
