@@ -16,7 +16,7 @@ a set of scripts, configs and a README to deploy a kraken configured kubernetes 
 1. Tag the five nodes.  Either select node -> tags -> edit , or node -> configuration -> machine configuration -> edit. Tag them as:
     - etcd (x1)
     - master (x1)
-    - worker (x3)  
+    - worker (x3)
 1. Get your MAAS key.  This can be found in your user's settings page.  Should be a long string with two colons in it, like so:
      `DpJenPsPW7ff9Ba8vq:avuGHMffffLRQZ7Kz8:TjSa4QmER7fffffCg2WqJmfzePstcmtk`
 
