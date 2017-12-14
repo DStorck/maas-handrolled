@@ -11,9 +11,9 @@ a set of scripts, configs and a README to deploy a kraken configured kubernetes 
 
 ##  Manual in MAAS GUI
 1. Log into your MAAS GUI
-1. Select 5 nodes for kubernetes.  All nodes should have at least 2 cores and 4GB of 
+1. Select 5 nodes for kubernetes.  All nodes should have at least 2 cores and 4GB of
   memory, more of either resource is fine.
-1. Tag the five nodes as:
+1. Tag the five nodes.  Either select node -> tags -> edit , or node -> configuration -> machine configuration -> edit. Tag them as:
     - etcd (x1)
     - master (x1)
     - worker (x3)
@@ -25,7 +25,7 @@ a set of scripts, configs and a README to deploy a kraken configured kubernetes 
     - `MAAS_API_URL` this is the API endpoint for your MAAS install.  This should be of the form `http<s>://DNS/MAAS/api/2.0`, the IP instead of a DNS entry is fine
     - `TOKEN` the MAAS key from the previous section
 1. Install required python libraries
-    - `pip install requirements.txt`
+    - `pip install -r requirements.txt`
 1. Execute the script `maas_handrolling.py` located in this directory
     - `./maas_handrolling.py`
 1. That's it!
